@@ -7,7 +7,7 @@
   "homepage": "https://toffoletto.me",
   "repository": {
     "type": "git",
-    "url": "https://github.com/raibtoffoletto/peng-orm"
+    "url": "git+https://github.com/raibtoffoletto/peng-orm.git"
   },
   "bugs": {
     "url": "https://github.com/raibtoffoletto/peng-orm/issues"
@@ -19,11 +19,11 @@
   ],
   "private": false,
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/main.js"
     }
   },
   "files": [
