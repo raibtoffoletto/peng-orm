@@ -1,0 +1,37 @@
+# Ignore config and project-specific files
+.vscode/
+node_modules/
+dist/_virtual/
+
+# Source files (optional if you're only shipping built code)
+src/
+
+# Build tools & configs
+*.config.js
+*.config.ts
+tsconfig.json
+vite.config.*
+rollup.config.*
+.eslint.*
+.editorconfig
+.prettier*
+.jest*
+.tsconfig*
+.yarn/
+.pnp.*
+
+# Git and CI/CD
+.git/
+.github/
+*.log
+
+# Test files
+tests/
+__tests__/
+*.spec.ts
+*.test.ts
+
+# Docs & Misc
+*.md
+!.README.md
+COPYING

@@ -1,0 +1,59 @@
+{
+  "name": "peng-orm",
+  "version": "0.0.0",
+  "license": "GPL-3.0-only",
+  "author": "Raí B. Toffoletto <rai@toffoletto.me>",
+  "description": "Micro ORM for Node's native SQLite module",
+  "homepage": "https://toffoletto.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raibtoffoletto/peng-orm"
+  },
+  "bugs": {
+    "url": "https://github.com/raibtoffoletto/peng-orm/issues"
+  },
+  "keywords": [
+    "node",
+    "sqlite",
+    "orm"
+  ],
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn lint && yarn format && CI=true jest --passWithNoTests && tsc && vite build",
+    "format": "prettier -w .",
+    "lint": "tsc --noEmit && eslint ./src",
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.3",
+    "@eslint/js": "9.39.1",
+    "@types/jest": "30.0.0",
+    "@types/node": "24.10.1",
+    "@typescript-eslint/eslint-plugin": "8.48.1",
+    "@typescript-eslint/parser": "8.48.1",
+    "eslint": "9.39.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.4",
+    "globals": "16.5.0",
+    "jest": "30.2.0",
+    "prettier": "3.7.4",
+    "ts-jest": "29.4.6",
+    "typescript": "5.9.3",
+    "vite": "7.2.6",
+    "vite-plugin-dts": "4.5.4"
+  },
+  "engines": {
+    "node": ">=22.0.0 <25.0.0"
+  }
+}
