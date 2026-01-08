@@ -4,7 +4,7 @@ export type Row = Record<string, SQLOutputValue>;
 
 export type TransformRow<T> = (row: Row) => T;
 
-interface PengORM {
+export interface PengORM {
   db?: DatabaseSync;
   path: string;
   migrations: string[][];
@@ -16,7 +16,7 @@ interface PengORM {
   exec(stmt: string, args?: SQLInputValue[]): void;
 }
 
-interface PengORMConstructor {
+export interface PengORMConstructor {
   new (
     path: PengORM['path'],
     migrations: PengORM['migrations'],
